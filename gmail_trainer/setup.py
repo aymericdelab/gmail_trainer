@@ -9,8 +9,10 @@ import base64
 from email.mime.multipart import MIMEMultipart
 
 class SendMail():
-
-    SCOPES = ['https://www.googleapis.com/auth/gmail.send']
+	
+	def __init__(self)
+    
+	self.SCOPES = ['https://www.googleapis.com/auth/gmail.send']
 
     # If modifying these scopes, delete the file token.pickle.
     def create_credentials(self):
@@ -30,7 +32,7 @@ class SendMail():
                 creds.refresh(Request())
             else:
                 flow = InstalledAppFlow.from_client_secrets_file(
-                    'credentials.json', SCOPES)
+                    'credentials.json', self.SCOPES)
                 creds = flow.run_local_server(port=0)
             # Save the credentials for the next run
             with open('token.pickle', 'wb') as token:
