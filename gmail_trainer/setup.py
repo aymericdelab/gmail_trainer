@@ -9,10 +9,10 @@ import base64
 from email.mime.multipart import MIMEMultipart
 
 class SendMail():
-	
-	def __init__(self):
+
+    def __init__(self):
     
-	self.SCOPES = ['https://www.googleapis.com/auth/gmail.send']
+        self.SCOPES = ['https://www.googleapis.com/auth/gmail.send']
 
     # If modifying these scopes, delete the file token.pickle.
     def create_credentials(self):
