@@ -10,7 +10,7 @@ from email.mime.multipart import MIMEMultipart
 
 class SendMail():
 	
-	def __init__(self)
+	def __init__(self):
     
 	self.SCOPES = ['https://www.googleapis.com/auth/gmail.send']
 
