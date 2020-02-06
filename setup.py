@@ -1,5 +1,5 @@
 
-from distutils.core import setup
+from setuptools import setup
 
 # read the contents of your README file
 from os import path
